@@ -7,6 +7,7 @@ import haxe.Timer;
 class RunScript {
 
 	public static function main() {
+		trace(Sys.command("haxelib", ["-version"]));
 		LogConfig.initialize();
 		var args = popRunCwd(Sys.args());
 		var success = false;

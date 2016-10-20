@@ -21,7 +21,9 @@ matrix:
     - os: osx
 
 install:
+  - haxelib install hxlog
   - haxelib dev hxmake .
+  - haxe build.hxml
 
 script:
   - haxelib run hxmake _
